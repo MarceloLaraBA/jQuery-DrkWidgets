@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark Widgets</title>
+	<meta charset="utf-8" />
+    <link href="assets/w3.css" rel="stylesheet" />
+    <link href="assets/app.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="w3-container">
+        <div>
+
+            <div class="w3-card-4">
+
+                <header class="w3-container w3-blue">
+                    <h2>Simple Tabbed Panels [tabs-index|tabs-panels]</h2>
+                </header>
+
+                <div class="w3-container">
+                    <!--head-->
+                    <link href="tab-selector/drkwidgets.tab-selector.css" rel="stylesheet" />
+                    <!--html start-->
+                    <div class="tabbedPanel">
+                        <ul class="tab-index">
+                            <li>Tab A</li>
+                            <li>Tab B</li>
+                            <li>Tab C</li>
+                        </ul>
+                        <div class="tab-panels">
+                            <div>Contents of Tab A</div>
+                            <div>Contents of Tab B</div>
+                            <div>Contents of Tab C</div>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+
+                    <!--html end-->
+                    <!-- js section -->
+                    <script src="tab-selector/drkwidgets.tab-selector.js"></script>
+                    <script>
+                        (function () {
+                            $("div.tabbedPanel").tabbedpanel(function (aa) { console.log(aa);});
+                        })();
+                    </script>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
