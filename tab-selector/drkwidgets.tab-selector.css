@@ -1,0 +1,8 @@
+/* Tabbed Panels*/
+ul.tab-index { margin:0; padding:0; list-style: none;display:block;}
+    ul.tab-index li {float: left;background: #ddd;padding: .25em;margin-right: .25em;border-bottom: 2px solid #ddd;cursor:pointer;-webkit-transition: 0.5s; transition: 0.5s;}
+    ul.tab-index li:hover {border-bottom: 2px solid #6200ff;}
+    ul.tab-index li.active, ul.tab-index li.active:hover {border-bottom: 2px solid #6200ff;} 
+div.tab-panels { clear:both; display:block;width:100%}
+    div.tab-panels div { display: none;width:100%;}
+    div.tab-panels div.active { display: block;}
